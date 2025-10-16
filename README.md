@@ -14,7 +14,7 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo de
 * Nome completo do aluno 1
 * Matheus Godinho Blaselbauer
 * Gabriel Amâncio de Oliveira
-* Nome completo do aluno 4
+* Bruno Alfeu Mendes de Araujo
 * Nome completo do aluno 5
 
 ## Orientador
