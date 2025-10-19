@@ -11,11 +11,11 @@ O projeto Solo Forte Agropecuária visa estruturar uma solução da arquitetura 
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Matheus Godinho Blaselbauer
-* Gabriel Amâncio de Oliveira
 * Bruno Alfeu Mendes de Araujo
+* Gabriel Amâncio de Oliveira
+* Guilherme de Souza Mendonça Silva
 * Isaac Samuel de Carvalho 
+* Matheus Godinho Blaselbauer
 * Yan Guimarães Martins
 
 ## Orientador
