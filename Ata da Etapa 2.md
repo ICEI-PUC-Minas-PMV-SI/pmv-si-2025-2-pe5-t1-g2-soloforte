@@ -11,7 +11,7 @@
 | Bruno Alfeu Mendes de Araújo | Implementação do NFS no ambiente da AWS                            | 9h                         |
 | Isaac Samuel de Carvalho     | Configuração do DNS do servidor                                    | 3 dias                     |
 | Yan Guimarães Martins        | Configuração do AD e GPO                                           | 12 h                       |
-| Guilherme de Souza Mendonça  | Configuração do DHCP no ambiente on-primese                        | 15 h                       |
+| Guilherme de Souza Mendonça  | Configuração do DHCP no ambiente on-premise                        | 15 h                       |
 
 ---
 
