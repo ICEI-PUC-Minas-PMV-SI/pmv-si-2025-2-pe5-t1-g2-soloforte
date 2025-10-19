@@ -7,10 +7,10 @@
 | Nome do Integrante           | Atividades Realizadas                                              | Carga Horária |
 |------------------------------|--------------------------------------------------------------------|----------------------------|
 | Matheus Godinho Blaselbauer  | Implementação do FTP e Banco de Dados no ambiente da AWS           | 15h                        |
-| Gabriel Amâncio de Oliveira  |Implementação do HTTP no ambiente da AWS| 12h                       |                            |
+| Gabriel Amâncio de Oliveira  | Implementação do HTTP no ambiente da AWS                           | 12h                        |
 | Bruno Alfeu Mendes de Araújo | Implementação do NFS no ambiente da AWS                            | 9h                         |
 | Isaac Samuel de Carvalho     | Configuração do DNS do servidor                                    | 3 dias                     |
 | Yan Guimarães Martins        | Configuração do AD e GPO                                           | 12 h                       |
-| [Nome 6]                     | [Descreva aqui sua contribuição]                                   | [x dias]                   |
+| Guilherme de Souza Mendonça  | [Descreva aqui sua contribuição]                                   | 15 h                       |
 
 ---
