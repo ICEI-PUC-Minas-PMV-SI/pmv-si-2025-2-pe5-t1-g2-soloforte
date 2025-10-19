@@ -15,7 +15,8 @@ O projeto Solo Forte Agropecuária visa estruturar uma solução da arquitetura 
 * Matheus Godinho Blaselbauer
 * Gabriel Amâncio de Oliveira
 * Bruno Alfeu Mendes de Araujo
-* Isaac Samuel de Carvalho
+* Isaac Samuel de Carvalho 
+* Yan Guimarães Martins
 
 ## Orientador
 
