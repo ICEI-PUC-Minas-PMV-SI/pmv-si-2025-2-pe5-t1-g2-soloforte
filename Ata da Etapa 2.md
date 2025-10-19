@@ -25,3 +25,11 @@ Na segunda etapa do projeto, fui responsável pela implementação e configuraç
 *   **Configuração do Servidor DHCP:** Realizei a instalação do pacote `isc-dhcp-server` no Ubuntu. Configurei o endereço IP estático da interface de rede do servidor (`192.168.99.1`) e defini o escopo de IPs a serem distribuídos para os clientes (faixa de `192.168.99.51` a `192.168.99.100`), incluindo as configurações de gateway e DNS.
 *   **Testes e Validação:** Configurei a máquina cliente Windows para receber um endereço IP automaticamente e realizei testes com o comando `ipconfig /all` para validar que o servidor estava distribuindo os endereços corretamente, confirmando o sucesso da implementação.
 *   **Documentação e Apresentação:** Fui responsável por documentar todo o passo a passo da configuração do DHCP para o artigo final do projeto, incluindo a captura de todas as telas de evidência, e gravei a seção correspondente do vídeo de apresentação da equipe.
+
+
+**Yan Guimarães Martins**
+
+Na segunda etapa do projeto, fiquei responsável por fazer a configuração AD e GPO por meio da virtualbox, utilizando o sistema operacional Windows.
+* **Configuração do Ambiente:** O ambiente de virtualização foi preparado para receber  o sistema operacional Windows.
+* **Configuração do Ambiente:** Realizei a instalação do CentOS e o sistema operacional do windows baixado do site da Microsoft, após isso segui os passos para as configurações do AD e GPO contidos na documentação modificando para o adequamento ao projeto solo forte
+* **Documentação e Apresentação:** Fui responsável por documentar o passo a passo do processo da criação do AD e GPO, além de participar de todas as discussões do grupo e fornecer e solicitar apoio quando necessário na equipe.
