@@ -56,7 +56,7 @@ Na segunda etapa do projeto, me responsabilizei por configurar os seguinte servi
 Na segunda etapa do projeto, fui responsável pela implementação e configuração do protocolo HTTP (Hypertext Transfer Protocol) no ambiente cloud AWS(Amazon Web Services). Minhas contribuições foram:
 
 *   **Configuração da Instância:** Realizei a configuração e criação da EC2 e logo em seguida crie um instância. Usei uma máquina virtual para realizar toda configuração do protocolo HTTP.
-*   **Configuração do protocolo HTTP:** Realizei a instalação do apache2 e atualização firewall com os comandos `sudo apt-get update` e `sudo apt-get install apache2`. Toda configuração foi realziada na VM da instancia criada na AWS.
+*   **Configuração do protocolo HTTP:** Realizei a instalação do apache2 e atualização firewall com os comandos `sudo apt-get update` e `sudo apt-get install apache2`. Toda configuração foi realziada na VM da instância criada na AWS.
 *   **Testes e Validação:** Para saber se estava tudo configurado, acessei o IP da minha instância e conseguir vizualizar a pagina padrão do Apache. Logo em seguida criei um pasta `meuSite` dentro do pasta `/var/www/html` e por lá criei o arquivo `index.html` com um código simples para representar uma breve comunicação com o servidor, onde conseguir acessar a página pelo http `http://34.234.96.85/meuSite/`.
 *   **Documentação e Apresentação:** Fui responsável por documentar todo o passo a passo da configuração do HTTP para o artigo final do projeto, incluindo a captura de todas as telas de evidência, e gravei a seção correspondente do vídeo de apresentação da equipe.
 ##
