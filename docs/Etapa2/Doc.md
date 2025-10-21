@@ -18,3 +18,5 @@ Essa abordagem foi escolhida por proporcionar:
 Você pode acessar o arquivo completo da documentação por meio do link abaixo:
 
 🔗 **[Clique aqui para acessar a documentação](https://docs.google.com/document/d/1NqKXSeIpdbEf4NVlx5_JdPBlymkCRANf/edit?usp=sharing&ouid=101354232968714429959&rtpof=true&sd=true)**
+
+
