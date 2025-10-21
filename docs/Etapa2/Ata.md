@@ -26,7 +26,7 @@ Na segunda etapa do projeto, fui responsável pela implementação e configuraç
 *   **Testes e Validação:** Configurei a máquina cliente Windows para receber um endereço IP automaticamente e realizei testes com o comando `ipconfig /all` para validar que o servidor estava distribuindo os endereços corretamente, confirmando o sucesso da implementação.
 *   **Documentação e Apresentação:** Fui responsável por documentar todo o passo a passo da configuração do DHCP para o artigo final do projeto, incluindo a captura de todas as telas de evidência, e gravei a seção correspondente do vídeo de apresentação da equipe.
 
-
+##
 **Yan Guimarães Martins**
 
 Na segunda etapa do projeto, fiquei responsável por fazer a configuração AD e GPO por meio da virtualbox, utilizando o sistema operacional Windows.
@@ -34,6 +34,7 @@ Na segunda etapa do projeto, fiquei responsável por fazer a configuração AD e
 * **Configuração do Ambiente:** Realizei a instalação do CentOS e o sistema operacional do windows baixado do site da Microsoft, após isso segui os passos para as configurações do AD e GPO contidos na documentação modificando para o adequamento ao projeto solo forte
 * **Documentação e Apresentação:** Fui responsável por documentar o passo a passo do processo da criação do AD e GPO, além de participar de todas as discussões do grupo e fornecer e solicitar apoio quando necessário na equipe.
 
+##
 **Matheus Godinho Blaselbauer**
 
 Na segunda etapa do projeto, me responsabilizei por configurar os seguinte serviços no ambiente cloud AWS(Amazon Web Services): Banco de Dados e FTP(File Transfer Protocol). 
@@ -49,3 +50,13 @@ Na segunda etapa do projeto, me responsabilizei por configurar os seguinte servi
 * Banco de Dados: O terminal da máquina cliente foi testado para apontar para o IP privado servidor e testar a conexão com o banco de dados através do cliente psql. O software pgAdmin foi utilizado apontando para o IP público do servidor. Ambas as conexões ocorreram com êxito.
 * FTP: O terminal da própria instância do servidor foi utilizada "@localhost" para verificar a conexão com o serviço de ftp. O software Filezilla foi utilizado para estabelecer uma conexão no modo ativo com servidor da AWS através do IP público da instância e as credenciais de usuário. Ambas as conexões ocorreram com êxito.
 
+##
+**Gabriel Amâncio de Oliveira**
+
+Na segunda etapa do projeto, fui responsável pela implementação e configuração do protocolo HTTP (Hypertext Transfer Protocol) no ambiente cloud AWS(Amazon Web Services). Minhas contribuições foram:
+
+*   **Configuração da Instância:** Realizei a configuração e criação da EC2 e logo em seguida crie um instância. Usei uma máquina virtual para realizar toda configuração do protocolo HTTP.
+*   **Configuração do protocolo HTTP:** Realizei a instalação do apache2 e atualização firewall com os comandos `sudo apt-get update` e `sudo apt-get install apache2`. Toda configuração foi realziada na VM da instancia criada na AWS.
+*   **Testes e Validação:** Para saber se estava tudo configurado, acessei o IP da minha instância e conseguir vizualizar a pagina padrão do Apache. Logo em seguida criei um pasta `meuSite` dentro do pasta `/var/www/html` e por lá criei o arquivo `index.html` com um código simples para representar uma breve comunicação com o servidor, onde conseguir acessar a página pelo http `http://34.234.96.85/meuSite/`.
+*   **Documentação e Apresentação:** Fui responsável por documentar todo o passo a passo da configuração do HTTP para o artigo final do projeto, incluindo a captura de todas as telas de evidência, e gravei a seção correspondente do vídeo de apresentação da equipe.
+##
