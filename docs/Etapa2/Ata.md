@@ -8,7 +8,7 @@
 |------------------------------|--------------------------------------------------------------------|----------------------------|
 | Matheus Godinho Blaselbauer  | Implementação do FTP e Banco de Dados no ambiente da AWS           | 15h                        |
 | Gabriel Amâncio de Oliveira  | Implementação do HTTP no ambiente da AWS                           | 12h                        |
-| Bruno Alfeu Mendes de Araújo | Implementação do NFS no ambiente da AWS                            | 9h                         |
+| Bruno Alfeu Mendes de Araújo | Implementação do NFS no ambiente da AWS                            | 12h                         |
 | Isaac Samuel de Carvalho     | Configuração do DNS do servidor                                    | 3 dias                     |
 | Yan Guimarães Martins        | Configuração do AD e GPO                                           | 12 h                       |
 | Guilherme de Souza Mendonça  | Configuração do DHCP no ambiente on-premise                        | 15 h                       |
@@ -59,4 +59,15 @@ Na segunda etapa do projeto, fui responsável pela implementação e configuraç
 *   **Configuração do protocolo HTTP:** Realizei a instalação do apache2 e atualização firewall com os comandos `sudo apt-get update` e `sudo apt-get install apache2`. Toda configuração foi realziada na VM da instância criada na AWS.
 *   **Testes e Validação:** Para saber se estava tudo configurado, acessei o IP da minha instância e conseguir vizualizar a pagina padrão do Apache. Logo em seguida criei um pasta `meuSite` dentro do pasta `/var/www/html` e por lá criei o arquivo `index.html` com um código simples para representar uma breve comunicação com o servidor, onde conseguir acessar a página pelo http `http://34.234.96.85/meuSite/`.
 *   **Documentação e Apresentação:** Fui responsável por documentar todo o passo a passo da configuração do HTTP para o artigo final do projeto, incluindo a captura de todas as telas de evidência, e gravei a seção correspondente do vídeo de apresentação da equipe.
+##
+**Bruno Alfeu Mendes de Araújo**
+
+Na segunda etapa do projeto, fiquei responsável por implementar a configuração do NFS (Network File System) utilizando uma instância EC2 da AWS, com o sistema operacional Ubuntu.
+
+*    Configuração do Servidor NFS: Realizei a instalação e configuração dos pacotes necessários para o serviço NFS na instância EC2 (Ubuntu). Isso incluiu a definição         dos diretórios que seriam compartilhados na rede (exports) e a configuração das permissões de acesso (incluindo a configuração de Security Groups na AWS para             liberar as portas do NFS).
+
+*    Integração e Adequação: Segui os passos para a configuração do servidor NFS, realizando as modificações necessárias para o adequamento ao projeto solo forte,             garantindo que os compartilhamentos de arquivos estivessem acessíveis para as outras instâncias no ambiente do projeto.
+
+*    Documentação e Apresentação: Fui responsável por documentar o passo a passo do processo de configuração do NFS na AWS, além de participar de todas as discussões do       grupo e fornecer e solicitar apoio quando necessário na equipe.
+
 ##
