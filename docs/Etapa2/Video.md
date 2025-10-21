@@ -8,4 +8,4 @@ A **apresentação final** deste projeto foi elaborada com o objetivo de **demon
   
 Você pode assistir ou visualizar a apresentação completa através do link abaixo:
 
-🔗 **[Clique aqui para acessar a apresentação final](https://www.youtube.com/watch?v=TRE0zFUyTrI)**
+🔗 **[Clique aqui para acessar a apresentação final](https://www.youtube.com/watch?v=S4dN8J_EYJY)**
