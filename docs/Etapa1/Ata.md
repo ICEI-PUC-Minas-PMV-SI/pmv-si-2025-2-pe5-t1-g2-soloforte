@@ -45,6 +45,18 @@
 **Planilha de Equipamentos**: Com base na arquitetura simulada no Packet Tracer, fui responsável por criar e detalhar a planilha de equipamentos. Isso incluiu a especificação dos modelos de roteadores, switches, access points e o tipo de cabeamento necessários para a implementação física do projeto "solo forte".
 
 ##
+
+##
+**Yan Guimarães Martins**
+
+**Objetivo**: Na primeira etapa do projeto, me responsabilizei por desenhar a arquitetura de rede da empresa no simulador Cisco Packet Tracer, Organizar as filiais e a matriz, e ajudar o Bruno na planilha de máquinas nde junts definimos quantas máquinas seriam utilizadas em toda as partes da empresa.
+
+**Desenho da Topologia**: No Packet Tracer, foi desenhada a topologia de barramento para o desenvolvimento da estrutura da "solo forte" pois é uma solução mais viável para uma empresa de médio porte.
+
+**Planilha de Equipamentos**: Fiquei a disposição do Bruno pra auxilia-lo na criação da planilha de máquinas.
+
+##
+
 **Isaac Samuel de Carvalho**
 
 **Objetivo**: Na segunda etapa do projeto, fui responsável pela configuração das redes Wi-Fi no simulador Cisco Packet Tracer e pela gestão e divisão das tarefas entre os integrantes da equipe. Essa etapa teve como objetivo garantir a comunicação sem fio entre os dispositivos e organizar o fluxo de trabalho do grupo de forma eficiente.
