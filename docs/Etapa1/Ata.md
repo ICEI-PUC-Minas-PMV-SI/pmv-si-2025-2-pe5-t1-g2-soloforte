@@ -11,6 +11,7 @@
 | Gabriel Amâncio de Oliveira  | Auxilio com a Arquitetura do Cisco Packet Tracer e Roteamento RIP    | 15h                        |
 | Bruno Alfeu Mendes de Araújo | Criação da Arquitetura do Cisco Packet Tracer e Preenchimento da Planilha de equipamentos    | 20h                        |
 | Guilherme de Souza Mendonça  | Configuração das redes de Wi-Fi dentro do Cisco Packet Tracer e gestão e divisão das tarefas    | 12h                        |
+| Yan Guimarães Martins  | Gerenciamento do estrutura e auxílio na planilha de máquinas   | 20h                       |
 | Isaac Samuel de Carvalho     | Configuração das redes de Wi-Fi dentro do Cisco Packet Tracer e gestão e divisão das tarefas    | 12h
 ---
 
