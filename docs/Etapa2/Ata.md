@@ -71,3 +71,16 @@ Na segunda etapa do projeto, fiquei responsável por implementar a configuraçã
 *    Documentação e Apresentação: Fui responsável por documentar o passo a passo do processo de configuração do NFS na AWS, além de participar de todas as discussões do       grupo e fornecer e solicitar apoio quando necessário na equipe.
 
 ##
+**Isaac Samuel de Carvalho**
+
+Na segunda etapa do projeto, fui responsável pela implementação e configuração do serviço de DNS (Domain Name System) em instâncias da AWS, utilizando o BIND9 em ambiente Ubuntu Server. Minhas contribuições foram:
+
+* Configuração do Servidor DNS: Realizei a instalação e configuração do serviço BIND9, criando as zonas direta e reversa para o domínio soloforteagro.teste, permitindo a tradução de nomes de domínio para endereços IP e vice-versa.
+
+* Ajustes de Rede e Segurança: Configurei o endereço IP privado da instância como servidor de nomes e ajustei as regras de entrada no grupo de segurança da AWS para permitir o tráfego nas portas 53 (UDP/TCP), garantindo a comunicação entre servidor e clientes.
+
+* Configuração do Cliente DNS: Criei uma segunda instância Ubuntu na mesma VPC para atuar como cliente, ajustando o arquivo /etc/resolv.conf para apontar para o servidor DNS.
+
+* Testes e Validação: Utilizei o comando dig para realizar consultas diretas e reversas, confirmando que o servidor DNS estava resolvendo corretamente os nomes e endereços IP.
+
+* Documentação e Apresentação: Fui responsável por documentar todo o processo de configuração e validação do DNS, registrando evidências e preparando o material para o vídeo de apresentação da equipe.
