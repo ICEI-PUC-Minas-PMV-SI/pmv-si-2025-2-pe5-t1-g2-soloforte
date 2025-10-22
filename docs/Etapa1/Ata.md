@@ -9,8 +9,9 @@
 |------------------------------|--------------------------------------------------------------------|----------------------------|
 | Matheus Godinho Blaselbauer  | Ajuda com a Arquitetura do Cisco Packet Tracer e Roteamento RIP    | 20h                        |
 | Gabriel Amâncio de Oliveira  | Auxilio com a Arquitetura do Cisco Packet Tracer e Roteamento RIP    | 15h                        |
-| Bruno Alfeu Mendes de Araújo  | Criação da Arquitetura do Cisco Packet Tracer e Preenchimento da Planilha de equipamentos    | 20h                        |
+| Bruno Alfeu Mendes de Araújo | Criação da Arquitetura do Cisco Packet Tracer e Preenchimento da Planilha de equipamentos    | 20h                        |
 | Guilherme de Souza Mendonça  | Configuração das redes de Wi-Fi dentro do Cisco Packet Tracer e gestão e divisão das tarefas    | 12h                        |
+| Isaac Samuel de Carvalho     | Configuração das redes de Wi-Fi dentro do Cisco Packet Tracer e gestão e divisão das tarefas    | 12h
 ---
 
 ## Detalhamento das atividades
@@ -44,3 +45,11 @@
 **Planilha de Equipamentos**: Com base na arquitetura simulada no Packet Tracer, fui responsável por criar e detalhar a planilha de equipamentos. Isso incluiu a especificação dos modelos de roteadores, switches, access points e o tipo de cabeamento necessários para a implementação física do projeto "solo forte".
 
 ##
+**Isaac Samuel de Carvalho**
+
+**Objetivo**: Na segunda etapa do projeto, fui responsável pela configuração das redes Wi-Fi no simulador Cisco Packet Tracer e pela gestão e divisão das tarefas entre os integrantes da equipe. Essa etapa teve como objetivo garantir a comunicação sem fio entre os dispositivos e organizar o fluxo de trabalho do grupo de forma eficiente.
+
+**Configuração das Redes Wi-Fi**: No Cisco Packet Tracer, configurei os Access Points e os dispositivos clientes (notebooks e smartphones), definindo os endereços IP e as configurações necessárias de rede.
+
+**Gestão e Divisão de Tarefas**: Além da configuração técnica, atuei na coordenação das atividades da equipe, distribuindo as responsabilidades entre os membros para cada parte da topologia, como configuração de roteadores, switches, servidores e testes de conectividade.
+
