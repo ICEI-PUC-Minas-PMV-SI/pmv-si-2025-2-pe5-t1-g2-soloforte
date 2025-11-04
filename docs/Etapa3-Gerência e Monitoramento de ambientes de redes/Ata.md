@@ -1,4 +1,4 @@
-# 🌾 Ata de Desenvolvimento da Etapa 2 — Projeto Solo Forte
+# 🌾 Ata de Desenvolvimento da Etapa 3 — Projeto Solo Forte
 
 ---
 
