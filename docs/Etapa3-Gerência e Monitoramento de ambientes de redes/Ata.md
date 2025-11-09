@@ -28,6 +28,20 @@ Configuração dos Hosts na Interface Web: Acessei a interface web do Zabbix atr
 
 Colaboração e Suporte: Durante toda a etapa, trabalhei em estreita colaboração com o Yan, fornecendo suporte na compreensão da estrutura de dados coletados pelo Zabbix e auxiliando na identificação das métricas mais relevantes para compor o dashboard. Recebi também o apoio do Yan na validação dos templates aplicados e na definição dos períodos de coleta de dados para os gráficos.
 
+
+
+##
+
+**Yan Guimarães Martins**:
+Na terceira etapa do projeto, fiquei responsável pela criação e customização do dashboard de monitoramento e dos gráficos de desempenho na interface web do Zabbix para o ambiente on-premise. Minhas contribuições foram:
+
+Criação do Dashboard Personalizado: Acessei a aba "Dashboards" e "All Dashboards" na interface web do Zabbix e criei um novo dashboard personalizado para centralizar as informações mais relevantes do ambiente on-premise. Defini o usuário administrador Zabbix como proprietário do dashboard e organizei a estrutura visual para facilitar a análise em tempo real dos serviços monitorados.
+
+Configuração de Widgets e Métricas: Adicionei diversos widgets ao dashboard através da opção "Add widget", selecionando e configurando os indicadores mais importantes para o projeto. Incluí widgets de disponibilidade dos hosts (servidor Ubuntu e cliente Windows), gráficos de uso de CPU e memória, tráfego de rede nas interfaces, e um widget específico para monitorar o status do processo DHCP, confirmando que o serviço estava ativo e em execução no servidor Ubuntu.
+
+Colaboração e Suporte: Trabalhei em conjunto com o Guilherme durante toda a etapa, recebendo orientação sobre a estrutura de dados disponibilizados pelos agentes Zabbix e fornecendo feedback sobre a necessidade de métricas adicionais para compor visualizações mais completas. Auxiliei também na validação da comunicação entre o servidor Zabbix e os agentes instalados nos hosts monitorados.
+
+
 ---
 ## Colaboração entre integrantes
 
