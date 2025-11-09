@@ -5,9 +5,9 @@
 | Nome do Integrante           | Atividades Realizadas                                              | Carga Horária |
 |------------------------------|--------------------------------------------------------------------|----------------------------|
 | Matheus Godinho Blaselbauer  | Configuração do Servidor Zabbix + Agentes FTP e PostgreSQL| 4 dias|
+| Yan GuimarãesMartins | Montagem do dashboard e dos gráficos no frontend do zabbix,seleção de templates, criação dewidgets efiltros, validaçãodas metricas de CPU, memória, rede e status doserviço DHCP,documentação das evidências |12 horas|
 
 | Bruno Alfeu Mendes de Araújo | Instalação e configuração do Zabbix Agent na instância NFS e atualização do documento com evidências e explicações do monitoramento NFS. | 8 horas|
-
 
 ## Detalhamento das atividades
 
