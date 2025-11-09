@@ -9,6 +9,7 @@
 | Yan GuimarãesMartins | Montagem do dashboard e dos gráficos no frontend do zabbix,seleção de templates, criação dewidgets efiltros, validaçãodas metricas de CPU, memória, rede e status doserviço DHCP,documentação das evidências |12 horas|
 | Bruno Alfeu Mendes de Araújo | Instalação e configuração do Zabbix Agent na instância NFS e atualização do documento com evidências e explicações do monitoramento NFS. | 8 horas|
 | Isaac Samuel de Carvalho | Configuração e conexão do meu cliente ao servidor Zabbix implementado na AWS. | 4 horas |
+| Gabriel Amâncio de Oliveira | Integração e configuração do meu cliente ao servidor Zabbix implementado na AWS e suporte para os outros integrantes  | 10 horas |
 
 ## Detalhamento das atividades
 
@@ -48,6 +49,20 @@ Colaboração e Suporte: Trabalhei em conjunto com o Guilherme durante toda a et
 **Isaac Samuel de Carvalho**
 
 Na terceira etapa do projeto, participei do processo auxiliando na conexão do meu cliente ao servidor Zabbix configurado pelo Matheus. Após ele implementar o servidor Zabbix em uma instância EC2 na AWS, realizei a configuração necessária no meu host para que o agente Zabbix se comunicasse corretamente com o servidor. Ajustei o arquivo de configuração do agente, apontando para o IP do servidor Zabbix, habilitei a porta padrão (10050) e defini o hostname da máquina. Com isso, a conexão entre meu cliente e o servidor foi estabelecida com sucesso, permitindo o monitoramento adequado pelo Zabbix.
+
+##
+
+**Gabriel Amâncio de Oliveira**
+
+Na terceira etapa do projeto, fiquei responsável pela integração da conexão do meu cliente ao servidor configurado pelo Matheus (Zabbix). Após a implementação do servidor Zabbix em uma instância EC2 na AWS, realizei a configuração necessária do meu host para que o agente Zabbix se comunicasse corretamente com o servidor.
+
+Ajustei o arquivo de configuração do agente (`zabbix_agentd.conf`), apontando para o IP do servidor Zabbix, habilitei a porta padrão (10050) e defini o hostname da máquina. 
+Com isso, a conexão entre meu cliente e o servidor foi estabelecida com sucesso, permitindo o monitoramento adequado pelo Zabbix.
+
+Em seguida, configurei a interface web do Zabbix, cadastrando o host e aplicando templates de monitoramento para CPU, memória, disco e rede. 
+Também realizei a criação de gráficos e triggers para acompanhar o desempenho do sistema em tempo real. 
+
+Por fim, realizei **testes de estresse** no servidor utilizando o comando `ab -n 10000 -c 100 http://seu-servidor/` para gerar carga e analisar o comportamento do sistema. Esses testes permitiram avaliar a estabilidade do ambiente, validar as métricas coletadas e confirmar o funcionamento do monitoramento via Zabbix e AWS.
 
 
 ---
