@@ -42,6 +42,13 @@ Configuração de Widgets e Métricas: Adicionei diversos widgets ao dashboard a
 Colaboração e Suporte: Trabalhei em conjunto com o Guilherme durante toda a etapa, recebendo orientação sobre a estrutura de dados disponibilizados pelos agentes Zabbix e fornecendo feedback sobre a necessidade de métricas adicionais para compor visualizações mais completas. Auxiliei também na validação da comunicação entre o servidor Zabbix e os agentes instalados nos hosts monitorados.
 
 
+##
+
+**Isaac Samuel de Carvalho**
+
+Na terceira etapa do projeto, participei do processo auxiliando na conexão do meu cliente ao servidor Zabbix configurado pelo Matheus. Após ele implementar o servidor Zabbix em uma instância EC2 na AWS, realizei a configuração necessária no meu host para que o agente Zabbix se comunicasse corretamente com o servidor. Ajustei o arquivo de configuração do agente, apontando para o IP do servidor Zabbix, habilitei a porta padrão (10050) e defini o hostname da máquina. Com isso, a conexão entre meu cliente e o servidor foi estabelecida com sucesso, permitindo o monitoramento adequado pelo Zabbix.
+
+
 ---
 ## Colaboração entre integrantes
 
