@@ -28,7 +28,6 @@ Configuração dos Hosts na Interface Web: Acessei a interface web do Zabbix atr
 
 Colaboração e Suporte: Durante toda a etapa, trabalhei em estreita colaboração com o Yan, fornecendo suporte na compreensão da estrutura de dados coletados pelo Zabbix e auxiliando na identificação das métricas mais relevantes para compor o dashboard. Recebi também o apoio do Yan na validação dos templates aplicados e na definição dos períodos de coleta de dados para os gráficos.
 
-Documentação: Fui responsável por documentar todo o processo de implementação do servidor Zabbix e configuração dos agentes para o artigo final do projeto, incluindo a captura de todas as evidências técnicas necessárias.
 ---
 ## Colaboração entre integrantes
 
