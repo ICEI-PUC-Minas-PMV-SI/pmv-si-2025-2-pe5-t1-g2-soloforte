@@ -64,6 +64,19 @@ Também realizei a criação de gráficos e triggers para acompanhar o desempenh
 
 Por fim, realizei **testes de estresse** no servidor utilizando o comando `ab -n 10000 -c 100 http://seu-servidor/` para gerar carga e analisar o comportamento do sistema. Esses testes permitiram avaliar a estabilidade do ambiente, validar as métricas coletadas e confirmar o funcionamento do monitoramento via Zabbix e AWS.
 
+##
+
+**Bruno Alfeu Mendes de Araújo**:
+
+Na terceira etapa do projeto, fiquei responsável pela integração e monitoramento de um servidor de arquivos NFS, conectando-o ao servidor Zabbix central (configurado pelo Matheus).
+
+Após a implementação do servidor Zabbix em uma instância EC2 na AWS, realizei a configuração necessária no meu host (servidor NFS) para que o agente Zabbix se comunicasse corretamente com o servidor. Ajustei o arquivo de configuração do agente (zabbix_agentd.conf), apontando para o IP do servidor Zabbix, habilitei a porta padrão (10050) e defini o hostname da máquina. Com isso, a conexão entre meu cliente e o servidor foi estabelecida com sucesso.
+
+Em seguida, configurei a interface web do Zabbix, cadastrando o host e aplicando os templates de monitoramento, com foco especial em "Linux by Zabbix agent" para monitorar CPU, memória e, crucialmente, o sistema de arquivos (disco). Criei gráficos específicos e triggers para o ponto de montagem NFS (/srv/shared_dir/), visando disparar alertas em caso de alta utilização de espaço.
+
+Por fim, realizei testes de estresse de disco para validar os triggers de monitoramento. Utilizei o comando sudo fallocate -l 900M /srv/shared_dir/arquivo_teste_900mb.img para criar um arquivo de 900MB, simulando um cenário de "disco quase cheio" (já que a máquina possuía 1GB). O teste foi bem-sucedido, fazendo com que o Zabbix gerasse o alerta de falta de espaço conforme configurado.
+
+Posteriormente, o comando sudo rm /srv/shared_dir/arquivo_teste_900mb.img foi executado para liberar o espaço. Isso permitiu validar também o "trigger" de recuperação no Zabbix, confirmando o ciclo completo de detecção e resolução do problema. Esses testes validaram a eficácia do monitoramento do sistema de arquivos NFS via Zabbix.
 
 ---
 ## Colaboração entre integrantes
