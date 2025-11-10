@@ -79,8 +79,3 @@ Por fim, realizei testes de estresse de disco para validar os triggers de monito
 Posteriormente, o comando sudo rm /srv/shared_dir/arquivo_teste_900mb.img foi executado para liberar o espaço. Isso permitiu validar também o "trigger" de recuperação no Zabbix, confirmando o ciclo completo de detecção e resolução do problema. Esses testes validaram a eficácia do monitoramento do sistema de arquivos NFS via Zabbix.
 
 ---
-## Colaboração entre integrantes
-
-- Guilherme auxiliou Yan na definição dos templates, no mapeamento das interfaces dos hosts e na validação de conectividade (agent/SNMP).
-- Yan auxiliou Guilherme na criação dos hosts no frontend, na configuração dos itens/trigger para o processo DHCP e na checagem dos “Latest data”.
----
