@@ -38,7 +38,7 @@ Na segunda etapa do projeto, fiquei responsável por fazer a configuração AD e
 **Matheus Godinho Blaselbauer**
 
 Na segunda etapa do projeto, me responsabilizei por configurar os seguinte serviços no ambiente cloud AWS(Amazon Web Services): Banco de Dados e FTP(File Transfer Protocol). 
-* **Instãncias**:
+* **Instâncias**:
 * Banco De Dados: A configuração do banco de dados foi feita localmente, ou seja, utilizando uma máquina virtual EC2 para hospedar um banco com dialeto PostgreSQL. Foi criada uma máquina virtual EC2 cliente na mesma rede virtual privada que o servidor hospedando o banco de dados. Foram utilizados tanto o terminal da instância cliente como o software pgAdmin como clientes para estabelecer a conexão.
 * FTP: Foi criada uma instância EC2 para configurar o servidor FTP e utilizados tanto o terminal da instância do servidor como o software Filezilla para servirem como clientes para estabelecer a conexão.
 
