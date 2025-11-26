@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= pageTitle %></title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <h1>
+          <%= headerTitle %><img
+            style="width: 80px; vertical-align: middle"
+            src="<%= headerLogo %>"
+            alt="Logo"
+          />
+        </h1>
+        <nav class="nav-menu">
+          <a href="/" class="nav-link <%= active === 'list' ? 'active' : '' %>"
+            >Listar</a
+          >
+          <a
+            href="/create"
+            class="nav-link <%= active === 'create' ? 'active' : '' %>"
+            >Criar</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="card">
+        <div class="card-header">
+          <h2 class="card-title">Detalhes do Produto</h2>
+        </div>
+
+        <div id="productDetails" class="product-details">
+          <div class="detail-group">
+            <div class="detail-label">ID</div>
+            <div class="detail-value" id="pId">-</div>
+          </div>
+          <div class="detail-group">
+            <div class="detail-label">Nome</div>
+            <div class="detail-value" id="pName">-</div>
+          </div>
+          <div class="detail-group">
+            <div class="detail-label">Descrição</div>
+            <div class="detail-value" id="pDesc">-</div>
+          </div>
+          <div class="detail-row">
+            <div>
+              <div class="detail-label">Preço</div>
+              <div class="detail-price" id="pPrice">-</div>
+            </div>
+            <div>
+              <div class="detail-label">Estoque</div>
+              <div class="detail-value" id="pStock">-</div>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <a class="btn btn-secondary" href="/">Voltar</a>
+            <a id="editBtn" class="btn btn-primary" href="#">Editar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/config.js"></script>
+    <script src="/utils.js"></script>
+    <script>
+      const id = new URLSearchParams(location.search).get("id");
+      if (id) load();
+
+      async function load() {
+        try {
+          const res = await fetch(`${API_BASE_URL}/${id}`);
+          if (!res.ok) throw new Error("Produto não encontrado");
+          const p = await res.json();
+          document.getElementById("pId").textContent = p.id;
+          document.getElementById("pName").textContent = p.name || "-";
+          document.getElementById("pDesc").textContent = p.description || "-";
+          document.getElementById("pPrice").textContent =
+            "R$ " + formatPrice(p.price);
+          document.getElementById("pStock").textContent = p.stock;
+          document.getElementById("editBtn").href = "/edit?id=" + p.id;
+        } catch (err) {
+          showAlert(err.message || "Erro", "error");
+        }
+      }
+    </script>
+  </body>
+</html>
