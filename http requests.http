@@ -1,0 +1,83 @@
+### Variáveis de ambiente
+@baseUrl = https://localhost:5000
+@apiUrl = {{baseUrl}}/api/products
+
+### GET - Buscar todos os produtos
+GET {{apiUrl}}
+Accept: application/json
+
+###
+
+### GET - Buscar produto por ID
+GET {{apiUrl}}/1
+Accept: application/json
+
+###
+
+### POST - Criar novo produto
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "name": "Produto Exemplo",
+  "price": 29.99,
+  "stock": 100
+}
+
+###
+
+### PUT - Atualizar produto existente
+PUT {{apiUrl}}/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "Produto Atualizado",
+  "price": 39.99,
+  "stock": 50
+}
+
+###
+
+### DELETE - Remover produto
+DELETE {{apiUrl}}/1
+
+###
+
+### Testes de cenários de erro
+
+### GET - Buscar produto inexistente (deve retornar 404)
+GET {{apiUrl}}/999
+Accept: application/json
+
+###
+
+### PUT - Atualizar produto inexistente (deve retornar 404)
+PUT {{apiUrl}}/999
+Content-Type: application/json
+
+{
+  "id": 999,
+  "name": "Produto Inexistente",
+  "price": 10.00,
+  "stock": 1
+}
+
+###
+
+### DELETE - Remover produto inexistente (deve retornar 404)
+DELETE {{apiUrl}}/999
+
+###
+
+### POST - Criar produto com dados inválidos (para testar validação)
+POST {{apiUrl}}
+Content-Type: application/json
+
+{
+  "name": "",
+  "price": -1,
+  "stock": -5
+}
+
+###
