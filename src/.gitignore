@@ -1,0 +1,21 @@
+# Compilação
+bin/
+obj/
+
+# Banco de dados local
+*.db
+*.db-shm
+*.db-wal
+
+# Configs locais
+appsettings.Development.json
+
+# IDE / Usuário
+.vscode/
+*.user
+*.suo
+
+# Logs e temporários
+*.log
+*.tmp
+*.temp
