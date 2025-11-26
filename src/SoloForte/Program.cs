@@ -9,9 +9,9 @@ using SoloForte.Middleware;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// DbContext (SQLite)
-var connString = builder.Configuration.GetConnectionString("Default") ?? "Data Source=app.db";
-builder.Services.AddDbContext<AppDbContext>(opt => opt.UseSqlite(connString));
+// DbContext(Npgsql/PostgreSQL)
+var connString = builder.Configuration.GetConnectionString("SOLOFORTE-DB");
+builder.Services.AddDbContext<AppDbContext>(opt => opt.UseNpgsql(connString));
 
 // AutoMapper
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
@@ -20,12 +20,38 @@ builder.Services.AddAutoMapper(cfg => cfg.AddProfile<MappingProfile>());
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();
 
-// MVC / Controllers
-builder.Services.AddControllers();
+//CORS Configuration
+var allowedOrigins = builder.Configuration.GetSection("Cors:AllowedOrigins").Get<string[]>() ?? [];
+var allowCredentials = builder.Configuration.GetValue<bool>("Cors:AllowCredentials");
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("ConfigurePolicy", policy =>
+    {
+        if (allowedOrigins.Length > 0)
+        {
+            policy.WithOrigins(allowedOrigins);
+        }
+        else {
+            policy.AllowAnyOrigin();
+        }
+        policy.AllowAnyMethod().AllowAnyHeader();
+        if(allowCredentials && allowedOrigins.Length > 0)
+        {
+            policy.AllowCredentials();
+        }
+        options.AddPolicy("Development", policy =>
+        {
+            policy.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
+        });
+    });
+});
 
 // Swagger (dev)
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Add Controllers
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -44,6 +70,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseGlobalExceptionHandler();
 
+// Arquivos estáticos (CSS, JS, etc.)
+app.UseStaticFiles();
+
+//CORS
+app.UseCors(app.Environment.IsDevelopment() ? "Development" : "ConfigurePolicy");
+
+// Roteamento
+app.UseRouting();
+
+// APIs
 app.MapControllers();
 
 await app.RunAsync();

@@ -17,7 +17,7 @@ public class AppDbContext : DbContext
         p.Property(x => x.Price).HasColumnType("decimal(18,2)");
         p.Property(x => x.CreatedAt).HasDefaultValueSql("CURRENT_TIMESTAMP");
 
-        // seed opcional (apenas exemplo)
-        p.HasData(new Product { Id = 1, Name = "Sample", Price = 10, Stock = 5, CreatedAt = DateTime.UtcNow });
+        // Comentar ou remover o seed
+        // p.HasData(new Product { Id = 1, Name = "Sample", Price = 10, Stock = 5, CreatedAt = DateTime.UtcNow });
     }
 }
