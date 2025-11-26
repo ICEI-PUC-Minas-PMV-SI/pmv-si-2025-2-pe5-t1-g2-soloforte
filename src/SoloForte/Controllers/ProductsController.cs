@@ -41,5 +41,6 @@ public class ProductsController : ControllerBase
     {
         var ok = await _service.DeleteAsync(id, ct);
         return ok ? NoContent() : NotFound();
+
     }
 }

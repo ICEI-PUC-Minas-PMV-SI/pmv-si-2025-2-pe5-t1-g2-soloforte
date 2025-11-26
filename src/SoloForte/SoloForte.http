@@ -1,6 +1,38 @@
-@SoloForte_HostAddress = http://localhost:5065
+@SoloForte_HostAddress = http://localhost:5000
 
-GET {{SoloForte_HostAddress}}/weatherforecast/
+GET {{SoloForte_HostAddress}}/api/products
 Accept: application/json
 
-###
+###Pegar Produtos
+
+GET {{SoloForte_HostAddress}}/api/products/1
+###Pegar Um Produto
+
+DELETE {{SoloForte_HostAddress}}/api/products/1
+Accept:application/json
+###Deletar um Produto
+
+POST {{SoloForte_HostAddress}}/api/products
+Content-Type:application/json
+{
+  "name":"Teste",
+  "description":"Desc",
+  "price":120,
+  "stock":1
+}
+###Criar Produto
+
+PUT {{SoloForte_HostAddress}}/api/products/1
+Content-Type:application/json
+{
+  "name":"Pute Teste",
+  "description":"Desc Alterado",
+  "price":150,
+  "stock":5
+}
+###Alterar todos os dados de um produto
+
+
+
+
+
