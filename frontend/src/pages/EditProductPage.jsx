@@ -5,7 +5,7 @@ import Header from '../components/Header'
 import Alert from '../components/Alert'
 
 export default function EditProductPage() {
-  const [form, setForm] = useState({ name: '', description: '', price: 0, stock: 0 })
+  const [form, setForm] = useState({ name: '', description: '', price: '', stock: 0 })
   const [loading, setLoading] = useState(true)
   const [searchParams] = useSearchParams()
   const navigate = useNavigate()
@@ -14,23 +14,30 @@ export default function EditProductPage() {
   const id = searchParams.get('id')
 
   useEffect(() => {
-    if (id) loadProduct()
-  }, [id])
-
-  const loadProduct = async () => {
-    const product = await fetchProduct(id)
-    if (product) {
-      setForm(product)
+    const loadProduct = async () => {
+      if (id) {
+        const product = await fetchProduct(id)
+        if (product) {
+          setForm(product)
+        }
+        setLoading(false)
+      }
     }
-    setLoading(false)
-  }
+    
+    loadProduct()
+  }, [id, fetchProduct])
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setForm(prev => ({
-      ...prev,
-      [name]: name === 'price' || name === 'stock' ? parseFloat(value) || 0 : value
-    }))
+    if (name === 'price') {
+      // Formata para BRL conforme digita
+      const numValue = value.replace(/\D/g, '')
+      setForm(prev => ({ ...prev, [name]: numValue ? numValue / 100 : '' }))
+    } else if (name === 'stock') {
+      setForm(prev => ({ ...prev, [name]: parseInt(value) || 0 }))
+    } else {
+      setForm(prev => ({ ...prev, [name]: value }))
+    }
   }
 
   const handleSubmit = async (e) => {
@@ -40,6 +47,8 @@ export default function EditProductPage() {
       setTimeout(() => navigate('/'), 1500)
     }
   }
+
+  const displayPrice = form.price ? parseFloat(form.price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : 'R$ 0,00'
 
   if (loading) return <div className="loading"><div className="spinner"></div></div>
 
@@ -66,8 +75,8 @@ export default function EditProductPage() {
 
             <div className="form-row">
               <div className="form-group">
-                <label>Preço</label>
-                <input name="price" type="number" step="0.01" value={form.price} onChange={handleChange} />
+                <label>Preço (BRL) - {displayPrice}</label>
+                <input name="price" type="text" placeholder="0,00" value={form.price} onChange={handleChange} />
               </div>
               <div className="form-group">
                 <label>Estoque</label>

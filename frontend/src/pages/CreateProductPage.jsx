@@ -5,16 +5,22 @@ import Header from '../components/Header'
 import Alert from '../components/Alert'
 
 export default function CreateProductPage() {
-  const [form, setForm] = useState({ name: '', description: '', price: 0, stock: 0 })
+  const [form, setForm] = useState({ name: '', description: '', price: '', stock: 0 })
   const { alert, createProduct } = useContext(AppContext)
   const navigate = useNavigate()
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setForm(prev => ({
-      ...prev,
-      [name]: name === 'price' || name === 'stock' ? parseFloat(value) || 0 : value
-    }))
+    if (name === 'price') {
+      // Formata para BRL conforme digita
+      const numValue = value.replace(/\D/g, '')
+      const formatted = (numValue / 100).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+      setForm(prev => ({ ...prev, [name]: numValue ? numValue / 100 : '' }))
+    } else if (name === 'stock') {
+      setForm(prev => ({ ...prev, [name]: parseInt(value) || 0 }))
+    } else {
+      setForm(prev => ({ ...prev, [name]: value }))
+    }
   }
 
   const handleSubmit = async (e) => {
@@ -24,6 +30,8 @@ export default function CreateProductPage() {
       setTimeout(() => navigate('/'), 1500)
     }
   }
+
+  const displayPrice = form.price ? parseFloat(form.price).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' }) : 'R$ 0,00'
 
   return (
     <>
@@ -48,8 +56,8 @@ export default function CreateProductPage() {
 
             <div className="form-row">
               <div className="form-group">
-                <label>Preço</label>
-                <input name="price" type="number" step="0.01" value={form.price} onChange={handleChange} />
+                <label>Preço (BRL) - {displayPrice}</label>
+                <input name="price" type="text" placeholder="0,00" value={form.price} onChange={handleChange} />
               </div>
               <div className="form-group">
                 <label>Estoque</label>

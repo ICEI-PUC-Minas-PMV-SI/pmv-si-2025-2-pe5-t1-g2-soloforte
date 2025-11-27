@@ -36,6 +36,12 @@ export function AppProvider({ children }) {
   const parseResponse = async (res) => {
     const contentType = res.headers.get('content-type')
     
+    // Se status é 204 No Content, não há body para ler
+    if (res.status === 204) {
+      console.log('✅ Resposta 204 No Content')
+      return null
+    }
+    
     if (!contentType || !contentType.includes('application/json')) {
       // Se não é JSON, tenta ler como texto para diagnosticar
       const text = await res.text()
@@ -116,14 +122,22 @@ export function AppProvider({ children }) {
       })
       
       if (!res.ok) {
+        const errorText = await res.text()
+        console.error('Erro na resposta:', res.status, errorText.substring(0, 200))
         throw new Error(`HTTP ${res.status} - Erro ao atualizar produto`)
       }
       
       showAlert('Produto atualizado com sucesso!', 'success')
+      
+      // Tenta parsear resposta, mas aceita 204 No Content também
+      if (res.status === 204) {
+        return { id, ...data } // Retorna os dados que foram enviados
+      }
+      
       return await parseResponse(res)
     } catch (err) {
       console.error('Erro ao atualizar produto:', err)
-      showAlert(`Erro: ${err.message}`, 'error')
+      showAlert(`Erro ao atualizar: ${err.message}`, 'error')
       return null
     }
   }, [showAlert])
@@ -133,15 +147,30 @@ export function AppProvider({ children }) {
       console.log('Deleting product:', id)
       const res = await fetch(`${API_BASE_URL}/${id}`, { method: 'DELETE' })
       
+      // Se recebeu erro (500, etc), tenta verificar se foi deletado mesmo assim
       if (!res.ok) {
-        throw new Error(`HTTP ${res.status} - Erro ao deletar produto`)
+        console.warn(`Servidor retornou HTTP ${res.status}, mas pode ter deletado. Verificando...`)
+        
+        // Tenta buscar o produto para confirmar se foi deletado
+        const checkRes = await fetch(`${API_BASE_URL}/${id}`)
+        
+        // Se retornar 404, o produto foi deletado (sucesso!)
+        if (checkRes.status === 404) {
+          console.log('✅ Produto foi deletado com sucesso (confirmado via verificação)')
+          showAlert('Produto deletado com sucesso!', 'success')
+          return true
+        }
+        
+        // Se retornar 200, o produto ainda existe (falha real)
+        throw new Error(`HTTP ${res.status} - Falha ao deletar produto`)
       }
       
+      // DELETE geralmente retorna 204 No Content ou 200 OK sem body
       showAlert('Produto deletado com sucesso!', 'success')
       return true
     } catch (err) {
       console.error('Erro ao deletar produto:', err)
-      showAlert(`Erro: ${err.message}`, 'error')
+      showAlert(`Erro ao deletar: ${err.message}`, 'error')
       return false
     }
   }, [showAlert])

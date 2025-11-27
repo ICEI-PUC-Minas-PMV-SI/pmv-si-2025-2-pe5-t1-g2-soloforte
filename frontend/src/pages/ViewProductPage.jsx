@@ -41,19 +41,19 @@ export default function ViewProductPage() {
           </div>
 
           <div className="product-details">
-            <div className="detail-row">
-              <label>Descrição:</label>
-              <p>{product.description || 'N/A'}</p>
+            <div className="detail-group">
+              <span className="detail-label">Descrição</span>
+              <span className="detail-value">{product.description || 'N/A'}</span>
             </div>
 
-            <div className="detail-row">
-              <label>Preço:</label>
-              <p className="price">{formatter.format(product.price)}</p>
+            <div className="detail-group">
+              <span className="detail-label">Preço</span>
+              <span className="detail-price">{formatter.format(product.price)}</span>
             </div>
 
-            <div className="detail-row">
-              <label>Estoque:</label>
-              <p>{product.stock} unidades</p>
+            <div className="detail-group">
+              <span className="detail-label">Estoque</span>
+              <span className="detail-value">{product.stock} unidades</span>
             </div>
           </div>
 
