@@ -2,7 +2,26 @@ import { createContext, useState, useCallback } from 'react'
 
 export const AppContext = createContext()
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000/api/products'
+// Usar configuração dinâmica se disponível, senão usar env do build, senão fallback
+const getApiUrl = () => {
+  // 1. Verificar se existe configuração dinâmica (arquivo config.js)
+  if (typeof window !== 'undefined' && window.__APP_CONFIG__?.API_URL) {
+    console.log('✅ Usando API_URL do config.js:', window.__APP_CONFIG__.API_URL)
+    return window.__APP_CONFIG__.API_URL
+  }
+  
+  // 2. Verificar variável de ambiente do build
+  if (import.meta.env.VITE_API_URL) {
+    console.log('✅ Usando API_URL do .env:', import.meta.env.VITE_API_URL)
+    return import.meta.env.VITE_API_URL
+  }
+  
+  // 3. Fallback apenas para desenvolvimento local
+  console.warn('⚠️ Usando fallback localhost. Configure .env ou config.js!')
+  return 'http://localhost:5000/api/products'
+}
+
+const API_BASE_URL = getApiUrl()
 
 export function AppProvider({ children }) {
   const [alert, setAlert] = useState(null)
