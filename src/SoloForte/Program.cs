@@ -68,6 +68,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+// Forwarded Headers Middleware
+app.UseForwardedHeaders();
+
 app.UseGlobalExceptionHandler();
 
 // Arquivos estáticos (CSS, JS, etc.)
