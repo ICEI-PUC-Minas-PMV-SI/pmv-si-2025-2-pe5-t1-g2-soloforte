@@ -8,6 +8,7 @@
 | Gabriel Amâncio de Oliveira  | Montagem do backend, documentação da PSI e suporte para os integrantes | 50 horas|
 | Matheus Godinho Blaselbauer  | Estruturação dos tópicos da PSI , deploy do CRUD e montagem da análise de vulnerabilidades | 50 horas|    
 | Isaac Samuel de Carvalho     | Suporte no backend, análise de vulnerabilidade e suporte para os integrantes | 10 horas |
+| Bruno Alfeu Mendes de Araújo  | documentação da PSI, documentação da etapa | 35 horas|
 
 
 ## Detalhamento das atividades
@@ -19,3 +20,5 @@
 **Matheus Godinho Blaselbauer**: Me responsabilizei por elaborar a divisão entre os tópicos da PSI: Capa, cabeçalho, ordenação dos assuntos e glossário. Integrei o ambiente AWS para subir a aplicação em um ambiente para produção e configurei um domínio .TECH para ser utilizado. Montei a cartilha de vulnerabilidades analisando as Top 10 vulnerabilidades do sistema de acordo com o site da OWASP.
 
 **Isaac Samuel de Carvalho**: Auxílio na montagem do backend, organização de tarefas e auxílio na documentação da análise de vulnerabilidade.
+
+**Bruno Alfeu Mendes de Araújo**: Fiquei responsável por ajudar na documentação da PSI. Revisei e corrigi partes de etapas anteriores que estavam inconsistentes e também participei da escrita do que foi desenvolvido nesta etapa, deixando tudo atualizado e organizado.
