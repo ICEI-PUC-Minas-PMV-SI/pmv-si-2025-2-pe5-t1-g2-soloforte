@@ -103,9 +103,10 @@ Disponibilizei o template inicial dos slides para a apresentação do projeto. E
 No período de desenvolvimento do projeto atuei principalmente nos confins mais técnicos de documentação e no gerenciamento do ambiente em nuvem. Na etapa 1 os problemas encontrados foram maiores e não foi possível solucionar os problemas encontrados para a configurabilidade e funcionamento da WAN.
 
 
-**Integrante:** Isaac Samuel de Carvalho  
 
 ---
+
+**Integrante:** Isaac Samuel de Carvalho  
 
 ## Etapa 1 – Arquitetura e configuração da topologia no Cisco Packet Tracer  
 **Carga horária:** 30 horas  
