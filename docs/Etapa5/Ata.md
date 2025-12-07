@@ -57,3 +57,46 @@ Trabalhei na organização da apresentação final:
 
 ## Resumo Final  
 Durante o semestre, atuei em todas as etapas do projeto, desde as configurações iniciais de rede e serviços, passando pela implementação de monitoramentos, elaboração de materiais de boas práticas e finalizando com apoio direto na apresentação e revisão completa da documentação. Meu trabalho contribuiu para a execução técnica, organização interna e entrega final detalhada e estruturada dos resultados da equipe.
+
+
+**Integrante:** Matheus Godinho Blaselbauer
+
+---
+
+## Etapa 1 – Ajuda com a Arquitetura do Cisco Packet Tracer e Roteamento RIP
+**Carga horária:** 20 horas  
+
+Visei auxiliar na constituição de uma arquitetura de rede por meio do software simulador Cisco Packet Tracer e configurar o roteamento de saída da WAN. A topologia escolhida foi a de barramento. Para a configuração da WAN, foi implementado o protocolo de rede RIP na versão 2 em cada filial.
+
+---
+
+## Etapa 2 – Implementação do FTP e Banco de Dados no ambiente da AWS
+**Carga horária:** 15 horas  
+
+Me responsabilizei por implementar um serviço de rede para o upload remoto de arquivos por meio do host local, no ambiente em nuvem AWS. Isso foi feito pelo protocolo de rede FTP. Para a configuração de um banco de dados, utilizei um SGBD local em uma máquina EC2, em dialeto PostgreSQL. Ambos os serviços foram testados e validados corretamente através de hosts clientes localizados também na nuvem.
+
+---
+
+## Etapa 3 – Configuração do Servidor Zabbix na AWS + Agentes FTP e PostgreSQL
+**Carga horária:** 4 dias
+
+Criei uma instância em nuvem para funcionar como servidor de monitoramento Zabbix e monitorar conexão via interface Agent com os serviços de rede configurados na AWS. Utilizei templates específicos e próprios para as seguintes instâncias: **Banco de Dados** e **Servidor Web Apache**.
+
+---
+
+## Etapa 4 – Estruturação dos tópicos da PSI , deploy do CRUD e montagem da análise de vulnerabilidades 
+**Carga horária:** 50 horas  
+
+Analisei a estruturação da PSI ou Políticas de Segurança de Informação como um todo e dividi os tópicos para a construção conforme as necessidades da Solo Forte Agropecuária. Gerenciei a disponibilização do CRUD desenvolvido para subir a aplicação para produção e prontificá-la para uso concreto.
+
+---
+
+## Etapa 5 – Documentação inicial, explicação geral da Etapa 2 e dificuldades encontradas + ajuste geral do design
+**Carga horária:** 10 horas  
+
+Disponibilizei o template inicial dos slides para a apresentação do projeto. Elaborei as partes para apresentação sobre o contexto da etapa 2 e as principais dificuldades encontradas ao longo do semestre.
+
+---
+
+## Resumo Final  
+No período de desenvolvimento do projeto atuei principalmente nos confins mais técnicos de documentação e no gerenciamento do ambiente em nuvem. Na etapa 1 os problemas encontrados foram maiores e não foi possível solucionar os problemas encontrados para a configurabilidade e funcionamento da WAN.
