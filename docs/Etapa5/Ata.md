@@ -161,3 +161,57 @@ Atuei diretamente na construção da apresentação final do projeto:
 
 ## Resumo Final  
 Durante o semestre, desempenhei papel ativo em todas as fases do projeto, desde o planejamento da arquitetura em simuladores, passando pela configuração de serviços essenciais como DNS e monitoramento, até o desenvolvimento de funcionalidades e apoio direto na apresentação final. Minha atuação contribuiu para o avanço técnico do projeto, suporte contínuo à equipe e entrega de um resultado consistente, bem documentado e visualmente organizado.
+
+
+---
+Integrante: Bruno Alfeu Mendes de Araújo
+
+## Etapa 1 – Desenho da Arquitetura de Rede e Planilha de Equipamentos
+**Carga horária:** 20 horas
+
+Objetivo e Topologia: Na etapa inicial, responsabilizei-me pelo desenho da arquitetura de rede da empresa utilizando o simulador Cisco Packet Tracer. Desenhei a topologia de barramento para a estrutura da "Solo Forte", definindo como as LANs, servidores e dispositivos seriam interconectados.
+
+Levantamento de Ativos: Com base na arquitetura simulada, realizei o levantamento detalhado e o preenchimento da planilha de equipamentos. Especifiquei os modelos de roteadores, switches, access points e o tipo de cabeamento necessários para a implementação física do projeto.
+
+---
+## Etapa 2 – Implementação do NFS na AWS (Ubuntu)
+**Carga horária:** 12 horas
+
+Fiquei responsável pela configuração do sistema de arquivos em rede (NFS) utilizando uma instância EC2 na AWS com Ubuntu.
+
+- Configuração do Servidor: Realizei a instalação dos pacotes necessários e defini os diretórios de compartilhamento (exports) e permissões de acesso. Configurei também os Security Groups na AWS para liberar as portas necessárias para o serviço.
+
+- Integração: Realizei as modificações necessárias para adequar o servidor ao projeto, garantindo que os compartilhamentos estivessem acessíveis para as outras instâncias do ambiente.
+
+- Documentação: Documentei o passo a passo de todo o processo de configuração na nuvem, além de participar das discussões de grupo para alinhamento técnico.
+
+---
+## Etapa 3 – Integração e Monitoramento do NFS com Zabbix
+**Carga horária:** 8 horas
+
+Nesta etapa, integrei o servidor NFS ao monitoramento central (Zabbix Server).
+
+- Configuração do Agente: Ajustei o arquivo zabbix_agentd.conf no meu host, apontando para o IP do servidor Zabbix e habilitando a porta 10050.
+
+- Templates e Triggers: Na interface web do Zabbix, apliquei o template "Linux by Zabbix agent" com foco no sistema de arquivos. Criei gráficos e triggers específicos para o ponto de montagem NFS (/srv/shared_dir) para alertar sobre alta utilização de disco.
+
+- Testes de Estresse: Validei o monitoramento criando um arquivo de 900MB (comando fallocate) para simular disco cheio. O teste foi bem-sucedido, gerando o alerta configurado. Posteriormente, removi o arquivo para validar o trigger de recuperação, fechando o ciclo de detecção.
+
+---
+## Etapa 4 – Documentação da PSI e Revisão Final
+**Carga horária:** 35 horas
+
+Revisão e Escrita: Atuei diretamente na documentação da Política de Segurança da Informação (PSI). Realizei uma revisão abrangente das etapas anteriores do projeto, corrigindo inconsistências e redigindo o conteúdo referente ao desenvolvimento desta fase, garantindo que todo o material estivesse atualizado e organizado.
+
+---
+## Etapa 5 – Preparação e Apresentação Final
+Carga horária: 8 horas
+
+Na fase final, concentrei-me na consolidação do material para a entrega e defesa do projeto.
+
+-Slides: Fui responsável por montar os slides referentes à Etapa 3, estruturando as evidências técnicas e resultados da integração do NFS com o Zabbix.
+
+-Apresentação: Realizei a apresentação oral deste tópico, demonstrando o funcionamento dos alertas e a configuração realizada.
+
+## Resumo Final
+Minha participação focou na estruturação da topologia de rede e no levantamento de hardware na fase inicial. Posteriormente, liderei a implementação e integração de serviços em nuvem (NFS na AWS), garantindo não apenas a configuração funcional, mas também o monitoramento proativo via Zabbix com testes práticos de validação. Finalizei contribuindo significativamente para a consistência da documentação técnica (PSI) e a apresentação dos resultados.
