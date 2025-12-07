@@ -101,3 +101,62 @@ Disponibilizei o template inicial dos slides para a apresentação do projeto. E
 
 ## Resumo Final  
 No período de desenvolvimento do projeto atuei principalmente nos confins mais técnicos de documentação e no gerenciamento do ambiente em nuvem. Na etapa 1 os problemas encontrados foram maiores e não foi possível solucionar os problemas encontrados para a configurabilidade e funcionamento da WAN.
+
+
+**Integrante:** Isaac Samuel de Carvalho  
+
+---
+
+## Etapa 1 – Arquitetura e configuração da topologia no Cisco Packet Tracer  
+**Carga horária:** 30 horas  
+
+Contribuí na definição da arquitetura da rede simulada no Cisco Packet Tracer, estruturando a topologia e organizando os dispositivos necessários para o projeto. Auxiliei na configuração inicial dos equipamentos, incluindo pontos de acesso e roteadores, garantindo coerência entre os requisitos do projeto e a divisão de responsabilidades entre os membros da equipe.
+
+---
+
+## Etapa 2 – Configuração de DNS utilizando Bind9 em ambiente AWS  
+**Carga horária:** 4 dias  
+
+Fui responsável pela implementação do serviço DNS utilizando **Bind9** em uma instância AWS, realizando todas as etapas de instalação, configuração e testes:  
+- Configuração de zonas direta e reversa.  
+- Ajuste de registros A, CNAME e PTR conforme necessidades do ambiente.  
+- Integração do DNS com outros serviços configurados pela equipe.  
+- Validação do funcionamento do serviço e documentação completa do processo.  
+- Suporte aos colegas durante os testes de resolução de nomes.
+
+---
+
+## Etapa 3 – Suporte à implementação do Zabbix e integração em ambiente AWS  
+**Carga horária:** 12 horas  
+
+Apoiei a equipe na configuração do Zabbix hospedado na AWS:  
+- Auxílio na instalação do Zabbix Server e dependências.  
+- Configuração de agentes em servidores Linux.  
+- Ajustes de comunicação entre instâncias para garantir o monitoramento adequado.  
+- Suporte na criação e vinculação de templates para hosts, auxiliando na leitura das métricas e organização das coletas.
+
+---
+
+## Etapa 4 – Desenvolvimento de funcionalidades e apoio geral ao time  
+**Carga horária:** 20 horas  
+
+Contribuí para o desenvolvimento da parte do CRUD relacionado ao projeto, além de auxiliar colegas em diversas atividades paralelas:  
+- Implementação de funcionalidades complementares solicitadas pela equipe.  
+- Acompanhamento de testes e correções pontuais.  
+- Suporte técnico aos membros durante a execução das tarefas individuais.
+
+---
+
+## Etapa 5 – Preparação da apresentação final e design dos slides  
+**Carga horária:** 10 horas  
+
+Atuei diretamente na construção da apresentação final do projeto:  
+- Criação e organização dos slides com foco visual e estruturado.  
+- Definição do design, paleta de cores e elementos gráficos utilizados.  
+- Apoio aos colegas na preparação dos conteúdos apresentados.  
+- Participação ativa na apresentação, contextualizando pontos técnicos desenvolvidos ao longo do semestre.
+
+---
+
+## Resumo Final  
+Durante o semestre, desempenhei papel ativo em todas as fases do projeto, desde o planejamento da arquitetura em simuladores, passando pela configuração de serviços essenciais como DNS e monitoramento, até o desenvolvimento de funcionalidades e apoio direto na apresentação final. Minha atuação contribuiu para o avanço técnico do projeto, suporte contínuo à equipe e entrega de um resultado consistente, bem documentado e visualmente organizado.
