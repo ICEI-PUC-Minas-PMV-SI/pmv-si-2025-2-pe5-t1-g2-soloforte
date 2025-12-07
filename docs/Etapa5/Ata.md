@@ -59,9 +59,10 @@ Trabalhei na organização da apresentação final:
 Durante o semestre, atuei em todas as etapas do projeto, desde as configurações iniciais de rede e serviços, passando pela implementação de monitoramentos, elaboração de materiais de boas práticas e finalizando com apoio direto na apresentação e revisão completa da documentação. Meu trabalho contribuiu para a execução técnica, organização interna e entrega final detalhada e estruturada dos resultados da equipe.
 
 
-**Integrante:** Matheus Godinho Blaselbauer
 
 ---
+
+**Integrante:** Matheus Godinho Blaselbauer
 
 ## Etapa 1 – Ajuda com a Arquitetura do Cisco Packet Tracer e Roteamento RIP
 **Carga horária:** 20 horas  
