@@ -253,3 +253,50 @@ Fiquei responsável por apresentar  os metodos de segurança e a CRUD da nossa a
 
  ## Resumo Final  
 Durante o semestre  minha ajuda ao grupo foi bem fluída onde aprendi diversas partes da estrutura de rede, métodos de segurança, e monitoramento de sistema controlado, além disso o trabalho em equipe e divisões de tarefas contribuiram para uma melhor experiência pro mercado de trabalho.
+
+---
+
+**Integrante:** Gabriel Amâncio de Oliveira
+
+---
+
+## Etapa 1 – Auxílio com a Arquitetura do Cisco Packet Tracer e Roteamento RIP
+**Carga horária:** 15 horas
+
+Descrição das Atividades:	Auxílio na configuração da arquitetura de rede e escolha da topologia para a simulação no Cisco Packet Tracer.
+Entregáveis e Detalhes:	* Escolha de Topologia: Optou-se pela Topologia de Barramento devido ao menor custo de cabeamento e simplicidade, adequadas ao porte mediano da empresa simulada. * Configuração de Roteadores: Definição de IPs na faixa de Classe A (base 10.0.0.0) para o roteamento RIP. Utilização de cabos DCE/DTE para as conexões seriais, controlando o clock e a transmissão de dados.
+
+---
+
+## Etapa 2 – Implementação do HTTP no ambiente da AWS
+**Carga horária:** 12 horas  
+
+Descrição das Atividades:	Responsabilidade pela implementação e configuração do protocolo HTTP no ambiente cloud AWS.
+Entregáveis e Detalhes:	* Configuração da Instância EC2: Criação e configuração de uma Instância EC2 (Máquina Virtual) para hospedar o servidor web. * Configuração do Protocolo HTTP: Instalação do servidor web Apache2 (sudo apt-get install apache2) e atualização das regras do firewall. * Testes e Validação: Acesso bem-sucedido ao IP da instância para visualizar a página padrão do Apache. Criação da estrutura /var/www/html/meuSite/index.html e validação do acesso via HTTP (http://34.234.96.85/meuSite/). * Documentação e Apresentação: Documentação completa do passo a passo da configuração HTTP, captura de telas de evidência e gravação da seção de vídeo correspondente à AWS.
+---
+
+## Etapa 3 – Integração e configuração do meu cliente ao servidor Zabbix implementado na AWS e suporte para os outros integrantes
+**Carga horária:** 10 horas  
+
+Descrição das Atividades:	Integração do cliente ao servidor Zabbix implementado pelo Matheus na AWS, configuração do monitoramento e testes de estresse.
+Entregáveis e Detalhes:	* Configuração do Agente Zabbix: Ajuste do arquivo zabbix_agentd.conf para apontar para o IP do servidor Zabbix, definição do hostname e habilitação da porta padrão 10050, estabelecendo a comunicação cliente-servidor. * Configuração da Interface Web: Cadastro do host na interface do Zabbix, aplicação de templates de monitoramento (CPU, memória, disco, rede) e criação de gráficos e triggers. * Testes de Estresse: Realização de testes utilizando o comando ab -n 10000 -c 100 http://seu-servidor/ para gerar carga, avaliar a estabilidade e validar as métricas coletadas pelo Zabbix na AWS.
+
+---
+
+## Etapa 4 – Montagem do backend, documentação da PSI e suporte para os integrantes
+**Carga horária:** 50 horas  
+---
+Descrição das Atividades:	Responsabilidade principal pela arquitetura e implementação do backend, garantia da integração com o frontend, documentação da PSI e suporte técnico à equipe.
+Entregáveis e Detalhes:	* Desenvolvimento do Backend: Estruturação da arquitetura, implementação de rotas e serviços (APIs) e configuração do banco de dados. * Integração: Garantia da correta comunicação e integração dos serviços de backend com o frontend. * Documentação PSI: Atualização e manutenção da Documentação da PSI (Prova de Situação de Inovação), garantindo a clareza e alinhamento do projeto. * Suporte Técnico: Prestação de suporte contínuo aos demais integrantes para o alinhamento das entregas e resolução de problemas técnicos.
+
+---
+Fiquei responsável pela montagem  da cartilha, os metodos de segurança e a CRUD da nossa aplicação. E apresentei a cartilha.
+
+ ## Resumo Final  
+O projeto semestral foi um sucesso na integração de diversas frentes da Engenharia de Software e Redes. A jornada começou com a definição de uma sólida arquitetura de rede (RIP no Cisco Packet Tracer), estabelecendo a base para o entendimento do tráfego e roteamento.
+
+A evolução para o ambiente cloud com a AWS permitiu a aplicação prática de infraestrutura moderna, culminando na implementação funcional do protocolo HTTP, essencial para a aplicação web. A parte mais crítica de infraestrutura foi concluída com a integração do monitoramento Zabbix, garantindo que o desempenho do sistema pudesse ser avaliado em tempo real sob testes de estresse, validando a estabilidade e a robustez do ambiente cloud.
+
+Paralelamente, a atuação no desenvolvimento do backend foi fundamental para a funcionalidade do produto final, garantindo a lógica de negócios e a persistência de dados. A dedicação à documentação (PSI) e ao suporte técnico à equipe garantiu que todas as entregas estivessem coesas e alinhadas, demonstrando não apenas proficiência técnica em Redes, Cloud e Desenvolvimento, mas também fortes habilidades de liderança e colaboração.
+
+O semestre representou um aprendizado abrangente, unindo teoria e prática em um projeto de grande escopo e complexidade.
