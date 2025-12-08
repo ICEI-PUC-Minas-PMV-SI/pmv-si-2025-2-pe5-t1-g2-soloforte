@@ -215,3 +215,41 @@ Na fase final, concentrei-me na consolidação do material para a entrega e defe
 
 ## Resumo Final
 Minha participação focou na estruturação da topologia de rede e no levantamento de hardware na fase inicial. Posteriormente, liderei a implementação e integração de serviços em nuvem (NFS na AWS), garantindo não apenas a configuração funcional, mas também o monitoramento proativo via Zabbix com testes práticos de validação. Finalizei contribuindo significativamente para a consistência da documentação técnica (PSI) e a apresentação dos resultados.
+
+---
+
+**Integrante:** Yan Guimarães Martins
+
+---
+
+## Etapa 1 – Planejamento da Arquitetura de Rede e Planilha de Equipamentos
+**Carga horária:** 20 horas  
+
+Atuei junto com o Bruno  para o planejamento e montagem da arquitetura de rede e da planilha de equipamentos
+
+---
+
+## Etapa 2 – Configuração da Politica de grupos em ambiente on-premise (VirtualBox)  
+**Carga horária:** 12 horas  
+
+Fui responsável pelo controle de usuários por meio de permissões de acesso.
+---
+
+## Etapa 3 – Monitoramento Zabbix e integração SNMP  
+**Carga horária:** 12 horas  
+
+Trabalhei junto com o Guilherme no monitoramento Zabbix utilizando os dados dos nossos testes para montar o dashboard mostrando como o servidor estava sendo utilizado.
+
+---
+
+## Etapa 4 – Suporte na configuração do Back-end
+---
+Não consegui ajudar o grupo nessa etapa de forma siguinificativa por problemas pessoais
+
+## Etapa 5 – Preparação e apresentação sobre a PSI
+
+---
+Fiquei responsável por apresentar  os metodos de segurança e a CRUD da nossa aplicação.
+
+ ## Resumo Final  
+Durante o semestre  minha ajuda ao grupo foi bem fluída onde aprendi diversas partes da estrutura de rede, métodos de segurança, e monitoramento de sistema controlado, além disso o trabalho em equipe e divisões de tarefas contribuiram para uma melhor experiência pro mercado de trabalho.
